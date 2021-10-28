@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECOV-19</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#vidiocovid").attr('src');
+
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#myModal").on('hide.bs.modal', function(){
+        $("#vidiocovid").attr('src', '');
+    });
+
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#myModal").on('show.bs.modal', function(){
+        $("#vidiocovid").attr('src', url);
+    });
+});
+</script>
+<!-- script popup -->
+<script id="hotline">
+    alert("Jika butuh informasi Silahkan Hubungi Hotline");
+		alert("HOTLINE COVID-19 : 021-521-0411 ");
+      // display string message
+    </script>
+<!-- akhiran popup -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+    <!-- css biasa -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- end css biasa -->
+  </head>
+  <body>
+      <!-- INI NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg  navbar-light bg-light shadow-sm">
+  <div class="container-lg ">
+    <a class="tittle" href="#">SECOV-19</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#edukasitext">Edukasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://covid19.go.id/peta-sebaran-covid19">Sebaran</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href=#proder>Proteksi</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- END NAVBAR -->
+<!-- SECTION HOME -->
+<section class="inibagiandepan">
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-lg-6 py-5">
+        <h1 class="head">Bersatu Melawan Covid-19</h1>
+        <p>lawan covid dengan mematuhi PROKES dan menjaga jarak aman agar penyebaran virus tidak melebar.</p>
+        <button class="more"type="button">Selengkapnya</button>
+
+      </div>
+        <div class="col-lg-6">
+        <img src="img/blog-1.svg" alt="">
+     </div>
+    </div>
+ </div>
+</section>
+<!-- END SECTION -->
+<!-- section edukasi -->
+<div class="col-lg-6 py-5 text-center justify-content-center m-auto">
+  <div class="row">
+    <h1 class="fw-bold" id="edukasitext">Edukasi</h1>
+</div>
+
+</div>
+</div>
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="ohyeah shadow-sm">
+  <img src="img/doctor.png" class="damn" alt="">
+  <div class="card-body">
+    <p class="text-damn">Klik tombol putar jika anda ingin memutar vidio edukasi seputar covid.</p>
+    <p class="text-p">Jangan lupa untuk melakukan vaksinasi.</p>
+    <button type="button" class="more"data-toggle="modal"<a href="#myModal" name="button">Putar Vidio</button></a>
+  </div>
+</div>
+<!-- INIMODAL VIDIO -->
+<!-- modal html -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edukasi Seputar Covid</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="vidiocovid" class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/hsls6DzwVGE" allowfullscreen></iframe>
+                  </div>
+                </div>
+                </div>
+<!-- akhirannya -->
+  </div>
+  </div>
+  <section class="inibagiandepan">
+    <div class="container pt-5">
+      <div class="row">
+        <h1 class="bawah" id="proder">Proteksi Diri</h1>
+        <img class="img m-auto"src="img/home.svg" alt="">
+        <div class="protek">
+          <div class="row">
+            <div class="card" style="width: 20rem;">
+  <img src="img/blog-2.svg" class="card-img-top" alt="...">
+  <div class="card-body ">
+    <p class="card-text">Semprot rumah anda dengan disinfektan.</p>
+  </div>
+</div>
+<div class="card" style="width: 20rem;">
+<img src="img/batuk.jpg" class="card-img-top" alt="...">
+<div class="card-body ">
+<p class="card-text">Jika merasa tidak fit segera isolasi mandiri guna mencegah penularan.</p>
+</div>
+<div class="card" style="width: 20rem;">
+</div>
+  <div class="card-body ">
+<img src="img/suhu.jpg" class="card-img-top" alt="...">
+<p class="card-text">Selalu cek suhu tubuh anda jika di atas angka normal segera ke dokter.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- end secton edukasi -->
+<!-- ini footer -->
+<section class="footer">
+
+    <div class="container">
+
+        <div class="d-flex flex-wrap justify-content-center text-center text-sm-start">
+
+            <div class="box p-3 m-2">
+                <h3>locations</h3>
+                <a href="#">Indonesia</a>
+                <a href="#">United State</a>
+                <a href="#">Japan</a>
+                <a href="#">France</a>
+                <a href="#">Russia</a>
+            </div>
+
+            <div class="box p-3 m-2">
+                <h3>quick links</h3>
+                <a href="#">Home</a>
+                <a href="#edukasitex">Edukasi</a>
+                <a href="https://covid19.go.id/peta-sebaran-covid19">Sebaran</a>
+                <a href=#proder>Proteksi</a>
+
+            </div>
+
+            <div class="box p-3 m-2">
+                <h3>follow us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Twitter</a>
+            </div>
+
+            <div class="box p-3 m-2">
+                <h3>contact info</h3>
+                <a href="#">+6281316618**</a>
+                <a href="#">rebicofficial@gmail.com</a>
+                <a href="#">Bogor, Indonesia - 4210</a>
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span>MATKUL PEMROGRAMAN WEB</span> | all rights reserved </div>
+
+    </div>
+  </section>
+
+<!-- end footer -->
+  </body>
+</html>
