@@ -120,7 +120,12 @@ color:red;
     font-size: 20px;
     color:black;
 }
+.navbar navbar-expand-lg{
 
+position:top 0%;
+  margin:0%;
+
+}
 .footer .box a{
     display: flex;
     font-size: 14px;
